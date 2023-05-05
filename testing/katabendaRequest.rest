@@ -1,0 +1,29 @@
+GET http://localhost:5000/katabenda
+
+###
+GET http://localhost:5000/katabenda/8a432bee-730f-4407-8f62-611a36f76a08
+
+###
+POST http://localhost:5000/katabenda
+Content-Type: application/json
+
+{
+    "kanji": "ゴミ箱",
+    "romaji": "Gomibako",
+    "arti": "Kotak Sampah",
+    "userId": 1
+}
+
+###
+PATCH http://localhost:5000/katabenda/8a432bee-730f-4407-8f62-611a36f76a08
+Content-Type: application/json
+
+{
+     "kanji": "ゴミ箱",
+    "romaji": "Gomibako",
+    "arti": "Kotak Sampah",
+    "userId": 1
+}
+
+###
+DELETE http://localhost:5000/katabenda/8a432bee-730f-4407-8f62-611a36f76a08

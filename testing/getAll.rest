@@ -1,0 +1,11 @@
+GET http://localhost:5000/gethirakata
+###
+GET http://localhost:5000/getkanjin5
+###
+GET http://localhost:5000/getkatabenda
+###
+GET http://localhost:5000/getkatakerja
+###
+GET http://localhost:5000/getkatasifat
+###
+GET http://localhost:5000/users

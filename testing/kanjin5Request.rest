@@ -1,0 +1,31 @@
+GET http://localhost:5000/Kanjin5
+
+###
+GET http://localhost:5000/Kanjin5/d41e60a6-5619-47d1-a916-7e84218934a3
+
+###
+POST http://localhost:5000/Kanjin5
+Content-Type: application/json
+
+{
+    "kanji": "四",
+    "onyomi": "Yot-tsu",
+    "kunyomi": "Yon/Shi",
+    "arti": "Empat",
+    "userId": 1
+}
+
+###
+PATCH http://localhost:5000/Kanjin5/d41e60a6-5619-47d1-a916-7e84218934a3
+Content-Type: application/json
+
+{
+    "kanji": "一 update",
+    "onyomi": "Hito-tsu",
+    "kunyomi": "Ichi",
+    "arti": "Satu",
+    "userId": 1
+}
+
+###
+DELETE http://localhost:5000/Kanjin5/d41e60a6-5619-47d1-a916-7e84218934a3

@@ -1,0 +1,31 @@
+GET http://localhost:5000/katasifat
+
+###
+GET http://localhost:5000/katasifat/72766832-0aa2-4f0c-9a82-b70c76501884
+
+###
+POST http://localhost:5000/katasifat
+Content-Type: application/json
+
+{
+    "kanji": "(赤)-い",
+    "romaji": "(Aka)-i",
+    "arti": "Marah",
+    "userId": 1
+}
+
+###
+PATCH http://localhost:5000/katasifat/72766832-0aa2-4f0c-9a82-b70c76501884
+Content-Type: application/json
+
+{
+    "kanji": "(赤)-い",
+    "romaji": "(Aka)-i",
+    "arti": "Biru",
+    "userId": 1
+}
+
+
+###
+DELETE http://localhost:5000/katasifat/72766832-0aa2-4f0c-9a82-b70c76501884
+

@@ -1,0 +1,145 @@
+//untuk create a user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "nama": "Admin",
+    "provinsi": "Jawa Timur",
+    "kota": "kota blitar",
+    "kecamatan": "kepanjen kidul",
+    "kelurahan": "tanggung",
+    "alamat": "Jl. Ciliwung No. 342",
+    "tempatlahir": "blitar",
+    "tgllahir": "1996-09-04",
+    "notelp": "08515669423",
+    "jkel": "Pria",
+    "email": "admin@admin.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+###
+//untuk melihat user yang telah dibuat
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/df6cb7fe-6ae5-4387-b981-e6078880fb1f
+
+###
+//update user
+Patch http://localhost:5000/users/df6cb7fe-6ae5-4387-b981-e6078880fb1f
+Content-Type: application/json
+
+{
+    "nama": "Firza Ganteng",
+    "provinsi": "jawa Timur",
+    "kota": "kota blitar",
+    "kecamatan": "kepanjen kidul",
+    "kelurahan": "tanggung",
+    "alamat": "Jl. Ciliwung No. 342",
+    "tempatlahir": "blitar",
+    "tgllahir": "1996-09-04",
+    "notelp": "08515669423",
+    "jkel": "Pria",
+    "email": "user@user.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "user"
+}
+
+###
+//delete
+DELETE http://localhost:5000/users/df6cb7fe-6ae5-4387-b981-e6078880fb1f
+
+//---------------------------------peserta magang----------------------------------------//
+###
+//untuk create a user
+POST http://localhost:5000/pesertamagang
+Content-Type: application/json
+
+{
+    "nama": "User",
+    "provinsi": "Jawa Timur",
+    "kota": "Jombang",
+    "kecamatan": "Jombang",
+    "kelurahan": "tanggung",
+    "alamat": "Jl. Ciliwung No. 342",
+    "tempatlahir": "Jombang",
+    "tgllahir": "1996-09-04",
+    "notelp": "081234567890",
+    "jkel": "Pria",
+    "email": "user@user.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "imjapan"
+}
+
+###
+//untuk melihat user yang telah dibuat
+GET http://localhost:5000/pesertamagang/2
+
+###
+GET http://localhost:5000/pesertamagang/9326fe21-481f-4bbe-81f7-b7b65b1f5246
+
+###
+//update user
+Patch http://localhost:5000/pesertamagang/9326fe21-481f-4bbe-81f7-b7b65b1f5246
+Content-Type: application/json
+
+{
+    "nama": "Levi",
+    "provinsi": "Jawa Timur",
+    "kota": "Kota Jombang",
+    "kecamatan": "kepanjen kidul",
+    "kelurahan": "tanggung",
+    "alamat": "Jl. Ciliwung No. 342",
+    "tempatlahir": "blitar",
+    "tgllahir": "1996-09-04",
+    "notelp": "08515669423",
+    "jkel": "Pria",
+    "email": "firza13@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "user"
+}
+
+###
+//delete
+DELETE http://localhost:5000/pesertamagang/9326fe21-481f-4bbe-81f7-b7b65b1f5246
+
+//-----------------------hirakata--------------------//
+###
+GET http://localhost:5000/Hirakata
+
+###
+GET http://localhost:5000/Hirakata/a7eb625f-e542-4a5a-bbfe-3f6471bf951a
+
+###
+POST http://localhost:5000/Hirakata
+Content-Type: application/json
+
+{
+    "hiragana": "あ",
+    "katakana": "ア",
+    "romaji": "A",
+    "userId": "1"
+}
+
+###
+PATCH http://localhost:5000/Hirakata/a7eb625f-e542-4a5a-bbfe-3f6471bf951a
+Content-Type: application/json
+
+{
+    "hiragana": "あ",
+    "katakana": "ア",
+    "romaji": "B",
+    "userId": "1"
+}
+
+###
+DELETE http://localhost:5000/Hirakata/a7eb625f-e542-4a5a-bbfe-3f6471bf951a
+
+
+//--------Login user----//
+###

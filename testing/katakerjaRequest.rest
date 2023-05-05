@@ -1,0 +1,30 @@
+GET http://localhost:5000/katakerja
+
+###
+GET http://localhost:5000/katakerja/b0811c57-e687-4569-afec-2041fb56458f
+
+###
+POST http://localhost:5000/katakerja
+Content-Type: application/json
+
+{
+    "kanji": "(食)べる",
+    "romaji": "(Ta)beru",
+    "arti": "makan",
+    "userId": 1
+}
+
+###
+PATCH http://localhost:5000/katakerja/b0811c57-e687-4569-afec-2041fb56458f
+Content-Type: application/json
+
+{
+    "kanji": "(飲)む",
+    "romaji": "(No)mu",
+    "arti": "Minum",
+    "userId": 1
+}
+
+###
+DELETE http://localhost:5000/katakerja/92cfd30a-85a8-4c86-be00-e113d891b1fd
+
